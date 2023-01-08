@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
 import DizzyPlate from "../public/dizzy-plate-with-vegetables.png";
@@ -31,12 +32,12 @@ export default function Home() {
             Tell us your food preferences and we&apos;ll only serve you
             delicious recipes ideas
           </p>
-          <a
-            href="/login"
+          <Link
+            href={"/login"}
             className="block w-full py-5 text-2xl bg-blue-600 mt-5 mr-10 rounded-2xl text-center"
           >
             Get Started
-          </a>
+          </Link>
         </div>
       </main>
     </>
