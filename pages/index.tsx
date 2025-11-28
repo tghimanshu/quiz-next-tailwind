@@ -7,6 +7,13 @@ import DizzyPlate from "../public/dizzy-plate-with-vegetables.png";
 
 const inter = Inter({ subsets: ["latin"] });
 
+/**
+ * The Home page component.
+ * Displays the landing page with a hero image ("Dizzy Plate") and a call to action
+ * to get started, which leads to the login page.
+ *
+ * @returns {JSX.Element} The rendered Home page.
+ */
 export default function Home() {
   return (
     <>

@@ -1,6 +1,13 @@
 import Link from "next/link";
 import React from "react";
 
+/**
+ * The Login page component.
+ * Currently displays a layout similar to the home page, serving as a placeholder
+ * or starting point for the authentication flow.
+ *
+ * @returns {JSX.Element} The rendered Login page.
+ */
 const Login = () => {
   return (
     <main className="bg-black grid grid-rows-1/9 h-screen">
