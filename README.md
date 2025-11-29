@@ -1,8 +1,56 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Food Tracker Quiz
+
+A Next.js application designed to track food preferences and suggest delicious recipe ideas.
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Technologies](#technologies)
+- [Getting Started](#getting-started)
+- [Project Structure](#project-structure)
+- [Scripts](#scripts)
+- [Learn More](#learn-more)
+
+## Overview
+
+"Your Best Food Tracker Ever!"
+
+This application aims to provide users with recipe suggestions based on their food preferences. Currently, it serves as a starting point (Phase 1) with a landing page and a placeholder login page.
+
+## Technologies
+
+- **[Next.js](https://nextjs.org/)**: The React Framework for the Web.
+- **[TypeScript](https://www.typescriptlang.org/)**: Typed superset of JavaScript.
+- **[Tailwind CSS](https://tailwindcss.com/)**: A utility-first CSS framework.
+- **[ESLint](https://eslint.org/)**: Pluggable JavaScript linter.
 
 ## Getting Started
 
-First, run the development server:
+Follow these steps to set up the project locally.
+
+### Prerequisites
+
+- Node.js (v14 or later recommended)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd quiz
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+### Running the Development Server
+
+Start the development server:
 
 ```bash
 npm run dev
@@ -12,13 +60,23 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- `pages/`: Contains the application's pages and API routes.
+  - `_app.tsx`: Main App component.
+  - `_document.tsx`: Custom Document component.
+  - `index.tsx`: Home/Landing page.
+  - `login.tsx`: Login page (placeholder).
+  - `api/hello.ts`: Example API route.
+- `public/`: Static assets like images.
+- `styles/`: CSS stylesheets including Tailwind directives.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- `npm run dev`: Runs the app in development mode.
+- `npm run build`: Builds the app for production.
+- `npm run start`: Starts the production server.
+- `npm run lint`: Lints the codebase using ESLint.
 
 ## Learn More
 
@@ -26,11 +84,3 @@ To learn more about Next.js, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
